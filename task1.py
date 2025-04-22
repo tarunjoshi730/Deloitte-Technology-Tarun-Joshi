@@ -1,6 +1,5 @@
 import json
 from datetime import datetime
-
 def iso_to_milliseconds(iso_timestamp):
     """Converts an ISO 8601 timestamp to milliseconds."""
     dt = datetime.fromisoformat(iso_timestamp.replace("Z", "+00:00"))  # Convert to datetime
